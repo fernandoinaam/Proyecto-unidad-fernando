@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+    <Container class="javax.swing.JPopupMenu" name="jPopupMenu1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+    </Container>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
+    <Property name="undecorated" type="boolean" value="true"/>
+    <Property name="type" type="java.awt.Window$Type" editor="org.netbeans.modules.form.editors.EnumEditor">
+      <Value id="POPUP"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -23,141 +40,178 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-              <Component id="Etiq_dire" min="-2" pref="76" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="Text_Dire" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="btn_escuadron" min="-2" pref="76" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                      <Component id="etiq_name" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="etiq_apel" min="-2" pref="80" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="etiq_mail" alignment="1" min="-2" pref="84" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="etiq_ciu" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                          <Component id="btn_tipodesangre" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="text_NOMBRE" pref="280" max="32767" attributes="0"/>
+                                  <Component id="Text_escuadron" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="text_ape" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="Text_ead" alignment="0" pref="106" max="32767" attributes="0"/>
+                                      <Component id="text_tipodesangre" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                                      <Component id="jLabel6" min="-2" pref="419" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="BTN_AGREGAR" min="-2" pref="98" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="BTN_ELIMIANR" min="-2" pref="97" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              <Component id="BTN_ELIMINARTODO" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="btn_mamalon" min="-2" pref="154" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="BTN_MODIFICAR" min="-2" pref="106" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="text_paisorigen" min="-2" pref="280" max="-2" attributes="0"/>
+                          <Component id="RB_espadadeenergia" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="RB_rifledeasalto" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="BTN_ATR" min="-2" pref="89" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="BTN_SALIR" min="-2" pref="79" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel6" min="-2" pref="351" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="BTN_ATR" min="-2" pref="89" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="BTN_SALIR" min="-2" pref="79" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="etiq_nac" alignment="0" max="32767" attributes="0"/>
-                          <Component id="etiq_ciu" alignment="0" max="32767" attributes="0"/>
-                          <Component id="etiq_apel" alignment="0" max="32767" attributes="0"/>
-                          <Component id="etiq_name" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="etiq_estac" min="-2" pref="91" max="-2" attributes="0"/>
-                          <Component id="etiq_mail" alignment="1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="COMBO_ESTD" min="-2" pref="173" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="text_ape" max="32767" attributes="0"/>
-                                  <Component id="text_name" max="32767" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="Text_mail" min="-2" pref="233" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="SPIN_DIA" min="-2" pref="59" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="SPIN_MES" pref="142" max="32767" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="COMBO_ESTD1" min="-2" pref="99" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-              </Group>
+              <EmptySpace min="-2" pref="455" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="text_fila" min="-2" pref="42" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="text_columna" min="-2" pref="39" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Component id="etiq_nvodato" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="text_nuevodato" min="-2" pref="299" max="-2" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="etiq_name" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="text_name" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="etiq_apel" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="text_ape" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Etiq_dire" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Text_Dire" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="etiq_ciu" min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="COMBO_ESTD" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="22" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="SPIN_DIA" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="SPIN_MES" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="COMBO_ESTD1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="etiq_nac" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="etiq_mail" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="Text_mail" alignment="1" min="-2" max="-2" attributes="0"/>
-              </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel6" min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etiq_estac" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="BTN_AGREGAR" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="BTN_ELIMIANR" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="BTN_ELIMINARTODO" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="BTN_MODIFICAR" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="btn_mamalon" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="etiq_name" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="text_NOMBRE" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="etiq_apel" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="text_ape" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jCheckBox2" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btn_escuadron" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Text_escuadron" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="etiq_ciu" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="text_paisorigen" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jCheckBox3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="text_tipodesangre" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_tipodesangre" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="etiq_mail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Text_ead" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="RB_espadadeenergia" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="RB_rifledeasalto" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="29" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="text_fila" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="text_columna" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="etiq_nvodato" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="text_nuevodato" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="BTN_SALIR" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="BTN_ATR" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jLabel6" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="127" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BTN_SALIR" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BTN_ATR" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="text_name">
+    <Component class="javax.swing.JTextField" name="text_NOMBRE">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="text_NOMBREActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="etiq_name">
       <Properties>
@@ -172,7 +226,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="                 APELLIDOS"/>
+        <Property name="text" type="java.lang.String" value="APELLIDOS"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="text_ape">
@@ -182,291 +236,8 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="                      CIUDAD"/>
+        <Property name="text" type="java.lang.String" value="PAIS DE ORIGEN"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="etiq_nac">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="12" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="FECHA DE NACIMIENTO"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="etiq_estac">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="12" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value=" ESTADO CIVIL"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="CASADO/A"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SOLTERO/A"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="PREFIERO NO DECIR"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="ENVIAR"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
-            <BevelBorder/>
-          </Border>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="COMBO_ESTD">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="33">
-            <StringItem index="0" value="- - - "/>
-            <StringItem index="1" value="Aguascalientes"/>
-            <StringItem index="2" value="Baja California"/>
-            <StringItem index="3" value="Baja California Sur"/>
-            <StringItem index="4" value="Campeche"/>
-            <StringItem index="5" value="Coahuila"/>
-            <StringItem index="6" value="Colima"/>
-            <StringItem index="7" value="Chiapas"/>
-            <StringItem index="8" value="Chihuahua"/>
-            <StringItem index="9" value="Distrito Federal"/>
-            <StringItem index="10" value="Durango"/>
-            <StringItem index="11" value="Guanajuato"/>
-            <StringItem index="12" value="Guerrero"/>
-            <StringItem index="13" value="Hidalgo"/>
-            <StringItem index="14" value="Jalisco"/>
-            <StringItem index="15" value="M&#xe9;xico"/>
-            <StringItem index="16" value="Michoac&#xe1;n"/>
-            <StringItem index="17" value="Morelos"/>
-            <StringItem index="18" value="Nayarit"/>
-            <StringItem index="19" value="Nuevo Le&#xf3;n"/>
-            <StringItem index="20" value="Oaxaca"/>
-            <StringItem index="21" value="Puebla"/>
-            <StringItem index="22" value="Queretaro"/>
-            <StringItem index="23" value="Quintana Roo"/>
-            <StringItem index="24" value="San Luis Postos&#xed;"/>
-            <StringItem index="25" value="Sinaloa"/>
-            <StringItem index="26" value="Sonora"/>
-            <StringItem index="27" value="Tabasco"/>
-            <StringItem index="28" value="Tamaulipas"/>
-            <StringItem index="29" value="Tlaxcala"/>
-            <StringItem index="30" value="Veracruz"/>
-            <StringItem index="31" value="Yucat&#xe1;n"/>
-            <StringItem index="32" value="Zacataecas"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JSpinner" name="SPIN_DIA">
-      <Properties>
-        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
-          <SpinnerModel type="list">
-            <ListItem value="- - -"/>
-            <ListItem value="1"/>
-            <ListItem value="2"/>
-            <ListItem value="3"/>
-            <ListItem value="4"/>
-            <ListItem value="5"/>
-            <ListItem value="6"/>
-            <ListItem value="7"/>
-            <ListItem value="8"/>
-            <ListItem value="9"/>
-            <ListItem value="10"/>
-            <ListItem value="11"/>
-            <ListItem value="12"/>
-            <ListItem value="13"/>
-            <ListItem value="14"/>
-            <ListItem value="15"/>
-            <ListItem value="16"/>
-            <ListItem value="17"/>
-            <ListItem value="18"/>
-            <ListItem value="19"/>
-            <ListItem value="20"/>
-            <ListItem value="21"/>
-            <ListItem value="22"/>
-            <ListItem value="23"/>
-            <ListItem value="24"/>
-            <ListItem value="25"/>
-            <ListItem value="26"/>
-            <ListItem value="27"/>
-            <ListItem value="28"/>
-            <ListItem value="29"/>
-            <ListItem value="30"/>
-            <ListItem value="31"/>
-          </SpinnerModel>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JSpinner" name="SPIN_MES">
-      <Properties>
-        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
-          <SpinnerModel type="list">
-            <ListItem value="- - - "/>
-            <ListItem value="ENERO"/>
-            <ListItem value="FEBRERO"/>
-            <ListItem value="MARZO"/>
-            <ListItem value="ABRIL"/>
-            <ListItem value="MAYO"/>
-            <ListItem value="JUNIO"/>
-            <ListItem value="JULIO"/>
-            <ListItem value="AGOSTO"/>
-            <ListItem value="SEPTIEMBRE"/>
-            <ListItem value="OCTUBRE"/>
-            <ListItem value="NOVIEMBRE"/>
-            <ListItem value="DICIEMBRE"/>
-          </SpinnerModel>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="COMBO_ESTD1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="123">
-            <StringItem index="0" value="- - - "/>
-            <StringItem index="1" value="2021"/>
-            <StringItem index="2" value="2020"/>
-            <StringItem index="3" value="2019"/>
-            <StringItem index="4" value="2018"/>
-            <StringItem index="5" value="2017"/>
-            <StringItem index="6" value="2016"/>
-            <StringItem index="7" value="2015"/>
-            <StringItem index="8" value="2014"/>
-            <StringItem index="9" value="2013"/>
-            <StringItem index="10" value="2012"/>
-            <StringItem index="11" value="2011"/>
-            <StringItem index="12" value="2010"/>
-            <StringItem index="13" value="2009"/>
-            <StringItem index="14" value="2008"/>
-            <StringItem index="15" value="2007"/>
-            <StringItem index="16" value="2006"/>
-            <StringItem index="17" value="2005"/>
-            <StringItem index="18" value="2004"/>
-            <StringItem index="19" value="2003"/>
-            <StringItem index="20" value="2002"/>
-            <StringItem index="21" value="2001"/>
-            <StringItem index="22" value="2000"/>
-            <StringItem index="23" value="1999"/>
-            <StringItem index="24" value="1998"/>
-            <StringItem index="25" value="1997"/>
-            <StringItem index="26" value="1996"/>
-            <StringItem index="27" value="1995"/>
-            <StringItem index="28" value="1994"/>
-            <StringItem index="29" value="1993"/>
-            <StringItem index="30" value="1992"/>
-            <StringItem index="31" value="1991"/>
-            <StringItem index="32" value="1990"/>
-            <StringItem index="33" value="1989"/>
-            <StringItem index="34" value="1988"/>
-            <StringItem index="35" value="1987"/>
-            <StringItem index="36" value="1986"/>
-            <StringItem index="37" value="1985"/>
-            <StringItem index="38" value="1984"/>
-            <StringItem index="39" value="1983"/>
-            <StringItem index="40" value="1982"/>
-            <StringItem index="41" value="1981"/>
-            <StringItem index="42" value="1980"/>
-            <StringItem index="43" value="1979"/>
-            <StringItem index="44" value="1978"/>
-            <StringItem index="45" value="1977"/>
-            <StringItem index="46" value="1976"/>
-            <StringItem index="47" value="1975"/>
-            <StringItem index="48" value="1974"/>
-            <StringItem index="49" value="1973"/>
-            <StringItem index="50" value="1972"/>
-            <StringItem index="51" value="1971"/>
-            <StringItem index="52" value="1970"/>
-            <StringItem index="53" value="1969"/>
-            <StringItem index="54" value="1968"/>
-            <StringItem index="55" value="1967"/>
-            <StringItem index="56" value="1966"/>
-            <StringItem index="57" value="1965"/>
-            <StringItem index="58" value="1964"/>
-            <StringItem index="59" value="1963"/>
-            <StringItem index="60" value="1962"/>
-            <StringItem index="61" value="1961"/>
-            <StringItem index="62" value="1960"/>
-            <StringItem index="63" value="1959"/>
-            <StringItem index="64" value="1958"/>
-            <StringItem index="65" value="1957"/>
-            <StringItem index="66" value="1956"/>
-            <StringItem index="67" value="1955"/>
-            <StringItem index="68" value="1954"/>
-            <StringItem index="69" value="1953"/>
-            <StringItem index="70" value="1952"/>
-            <StringItem index="71" value="1951"/>
-            <StringItem index="72" value="1950"/>
-            <StringItem index="73" value="1949"/>
-            <StringItem index="74" value="1948"/>
-            <StringItem index="75" value="1947"/>
-            <StringItem index="76" value="1946"/>
-            <StringItem index="77" value="1945"/>
-            <StringItem index="78" value="1944"/>
-            <StringItem index="79" value="1943"/>
-            <StringItem index="80" value="1942"/>
-            <StringItem index="81" value="1941"/>
-            <StringItem index="82" value="1940"/>
-            <StringItem index="83" value="1939"/>
-            <StringItem index="84" value="1938"/>
-            <StringItem index="85" value="1937"/>
-            <StringItem index="86" value="1936"/>
-            <StringItem index="87" value="1935"/>
-            <StringItem index="88" value="1934"/>
-            <StringItem index="89" value="1933"/>
-            <StringItem index="90" value="1932"/>
-            <StringItem index="91" value="1931"/>
-            <StringItem index="92" value="1930"/>
-            <StringItem index="93" value="1929"/>
-            <StringItem index="94" value="1928"/>
-            <StringItem index="95" value="1927"/>
-            <StringItem index="96" value="1926"/>
-            <StringItem index="97" value="1925"/>
-            <StringItem index="98" value="1924"/>
-            <StringItem index="99" value="1923"/>
-            <StringItem index="100" value="1922"/>
-            <StringItem index="101" value="1921"/>
-            <StringItem index="102" value="1920"/>
-            <StringItem index="103" value="1919"/>
-            <StringItem index="104" value="1918"/>
-            <StringItem index="105" value="1917"/>
-            <StringItem index="106" value="1916"/>
-            <StringItem index="107" value="1915"/>
-            <StringItem index="108" value="1914"/>
-            <StringItem index="109" value="1913"/>
-            <StringItem index="110" value="1912"/>
-            <StringItem index="111" value="1911"/>
-            <StringItem index="112" value="1910"/>
-            <StringItem index="113" value="1909"/>
-            <StringItem index="114" value="1908"/>
-            <StringItem index="115" value="1907"/>
-            <StringItem index="116" value="1906"/>
-            <StringItem index="117" value="1905"/>
-            <StringItem index="118" value="1904"/>
-            <StringItem index="119" value="1903"/>
-            <StringItem index="120" value="1902"/>
-            <StringItem index="121" value="1901"/>
-            <StringItem index="122" value="1900"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -502,6 +273,7 @@
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BTN_ATRMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_ATRActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="etiq_mail">
@@ -509,20 +281,130 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="CORREO ELECTR&#xd3;NICO"/>
+        <Property name="text" type="java.lang.String" value="EDAD"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="Text_mail">
+    <Component class="javax.swing.JTextField" name="Text_ead">
     </Component>
-    <Component class="javax.swing.JLabel" name="Etiq_dire">
+    <Component class="javax.swing.JLabel" name="btn_escuadron">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="DIRECCI&#xd3;N"/>
+        <Property name="text" type="java.lang.String" value="ESCUADRON"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="Text_Dire">
+    <Component class="javax.swing.JTextField" name="Text_escuadron">
+    </Component>
+    <Component class="javax.swing.JLabel" name="btn_tipodesangre">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="TIPO DE SANGRE"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="text_tipodesangre">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tabla">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="6" rowCount="5">
+                <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                <Column editable="true" title="Title 5" type="java.lang.Object"/>
+                <Column editable="true" title="Title 6" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="BTN_AGREGAR">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="AGREGAR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_AGREGARActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BTN_ELIMIANR">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ELIMINAR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_ELIMIANRActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BTN_ELIMINARTODO">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ELIMINAR TODO"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_ELIMINARTODOActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BTN_MODIFICAR">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MODIFICAR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BTN_MODIFICARMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_MODIFICARActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="text_paisorigen">
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="RB_espadadeenergia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ESPADA DE ENERGIA"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="RB_rifledeasalto">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="RIFLE DE ASALTO"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_mamalon">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="modificaciones"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_mamalonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="fila"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="text_fila">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="columna"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="text_columna">
+    </Component>
+    <Component class="javax.swing.JLabel" name="etiq_nvodato">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NUEVO DATO"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="text_nuevodato">
     </Component>
   </SubComponents>
 </Form>

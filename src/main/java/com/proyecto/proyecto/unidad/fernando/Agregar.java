@@ -5,17 +5,30 @@
  */
 package com.proyecto.proyecto.unidad.fernando;
 
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author fer_9
  */
 public class Agregar extends javax.swing.JFrame {
-
+    DefaultTableModel modelo; 
     /**
      * Creates new form Agregar
+     * initComponents();
+        Agregar.this.setBackground(new Color(0,0,0,0));
      */
     public Agregar() {
         initComponents();
+        modelo=new DefaultTableModel();
+        modelo.addColumn("NOMBRE");
+        modelo.addColumn("APELLIDOS");
+        modelo.addColumn("ESCUADRON");
+        modelo.addColumn("PAIS DE ORIGEN");
+        modelo.addColumn("TIPO DE SANGRE");
+        modelo.addColumn("EDAD");
+        this.tabla.setModel(modelo);
     }
 
     /**
@@ -27,67 +40,58 @@ public class Agregar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        text_name = new javax.swing.JTextField();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        text_NOMBRE = new javax.swing.JTextField();
         etiq_name = new javax.swing.JLabel();
         etiq_apel = new javax.swing.JLabel();
         text_ape = new javax.swing.JTextField();
         etiq_ciu = new javax.swing.JLabel();
-        etiq_nac = new javax.swing.JLabel();
-        etiq_estac = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
-        COMBO_ESTD = new javax.swing.JComboBox<>();
-        SPIN_DIA = new javax.swing.JSpinner();
-        SPIN_MES = new javax.swing.JSpinner();
-        COMBO_ESTD1 = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         BTN_SALIR = new javax.swing.JButton();
         BTN_ATR = new javax.swing.JButton();
         etiq_mail = new javax.swing.JLabel();
-        Text_mail = new javax.swing.JTextField();
-        Etiq_dire = new javax.swing.JLabel();
-        Text_Dire = new javax.swing.JTextField();
+        Text_ead = new javax.swing.JTextField();
+        btn_escuadron = new javax.swing.JLabel();
+        Text_escuadron = new javax.swing.JTextField();
+        btn_tipodesangre = new javax.swing.JLabel();
+        text_tipodesangre = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tabla = new javax.swing.JTable();
+        BTN_AGREGAR = new javax.swing.JButton();
+        BTN_ELIMIANR = new javax.swing.JButton();
+        BTN_ELIMINARTODO = new javax.swing.JButton();
+        BTN_MODIFICAR = new javax.swing.JButton();
+        text_paisorigen = new javax.swing.JTextField();
+        RB_espadadeenergia = new javax.swing.JRadioButton();
+        RB_rifledeasalto = new javax.swing.JRadioButton();
+        btn_mamalon = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        text_fila = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        text_columna = new javax.swing.JTextField();
+        etiq_nvodato = new javax.swing.JLabel();
+        text_nuevodato = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setUndecorated(true);
+        setType(java.awt.Window.Type.POPUP);
+
+        text_NOMBRE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                text_NOMBREActionPerformed(evt);
+            }
+        });
 
         etiq_name.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         etiq_name.setText("   NOMBRE");
 
         etiq_apel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        etiq_apel.setText("                 APELLIDOS");
+        etiq_apel.setText("APELLIDOS");
 
         etiq_ciu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        etiq_ciu.setText("                      CIUDAD");
-
-        etiq_nac.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        etiq_nac.setText("FECHA DE NACIMIENTO");
-
-        etiq_estac.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        etiq_estac.setText(" ESTADO CIVIL");
-
-        jCheckBox1.setText("CASADO/A");
-
-        jCheckBox2.setText("SOLTERO/A");
-
-        jCheckBox3.setText("PREFIERO NO DECIR");
-
-        jButton1.setText("ENVIAR");
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-
-        COMBO_ESTD.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "- - - ", "Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Coahuila", "Colima", "Chiapas", "Chihuahua", "Distrito Federal", "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "México", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Queretaro", "Quintana Roo", "San Luis Postosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacataecas" }));
-
-        SPIN_DIA.setModel(new javax.swing.SpinnerListModel(new String[] {"- - -", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"}));
-
-        SPIN_MES.setModel(new javax.swing.SpinnerListModel(new String[] {"- - - ", "ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"}));
-
-        COMBO_ESTD1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "- - - ", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995", "1994", "1993", "1992", "1991", "1990", "1989", "1988", "1987", "1986", "1985", "1984", "1983", "1982", "1981", "1980", "1979", "1978", "1977", "1976", "1975", "1974", "1973", "1972", "1971", "1970", "1969", "1968", "1967", "1966", "1965", "1964", "1963", "1962", "1961", "1960", "1959", "1958", "1957", "1956", "1955", "1954", "1953", "1952", "1951", "1950", "1949", "1948", "1947", "1946", "1945", "1944", "1943", "1942", "1941", "1940", "1939", "1938", "1937", "1936", "1935", "1934", "1933", "1932", "1931", "1930", "1929", "1928", "1927", "1926", "1925", "1924", "1923", "1922", "1921", "1920", "1919", "1918", "1917", "1916", "1915", "1914", "1913", "1912", "1911", "1910", "1909", "1908", "1907", "1906", "1905", "1904", "1903", "1902", "1901", "1900" }));
+        etiq_ciu.setText("PAIS DE ORIGEN");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
@@ -107,129 +111,223 @@ public class Agregar extends javax.swing.JFrame {
                 BTN_ATRMouseClicked(evt);
             }
         });
+        BTN_ATR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_ATRActionPerformed(evt);
+            }
+        });
 
         etiq_mail.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        etiq_mail.setText("CORREO ELECTRÓNICO");
+        etiq_mail.setText("EDAD");
 
-        Etiq_dire.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        Etiq_dire.setText("DIRECCIÓN");
+        btn_escuadron.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_escuadron.setText("ESCUADRON");
+
+        btn_tipodesangre.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_tipodesangre.setText("TIPO DE SANGRE");
+
+        tabla.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6"
+            }
+        ));
+        jScrollPane1.setViewportView(tabla);
+
+        BTN_AGREGAR.setText("AGREGAR");
+        BTN_AGREGAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_AGREGARActionPerformed(evt);
+            }
+        });
+
+        BTN_ELIMIANR.setText("ELIMINAR");
+        BTN_ELIMIANR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_ELIMIANRActionPerformed(evt);
+            }
+        });
+
+        BTN_ELIMINARTODO.setText("ELIMINAR TODO");
+        BTN_ELIMINARTODO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_ELIMINARTODOActionPerformed(evt);
+            }
+        });
+
+        BTN_MODIFICAR.setText("MODIFICAR");
+        BTN_MODIFICAR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BTN_MODIFICARMouseClicked(evt);
+            }
+        });
+        BTN_MODIFICAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_MODIFICARActionPerformed(evt);
+            }
+        });
+
+        RB_espadadeenergia.setText("ESPADA DE ENERGIA");
+
+        RB_rifledeasalto.setText("RIFLE DE ASALTO");
+
+        btn_mamalon.setText("modificaciones");
+        btn_mamalon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_mamalonActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("fila");
+
+        jLabel2.setText("columna");
+
+        etiq_nvodato.setText("NUEVO DATO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(Etiq_dire, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Text_Dire)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BTN_ATR, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(BTN_SALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(etiq_nac, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(etiq_ciu, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(etiq_apel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(etiq_name, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(etiq_estac, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(etiq_mail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckBox1)
-                                    .addComponent(jCheckBox2)
-                                    .addComponent(jCheckBox3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(COMBO_ESTD, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(text_ape)
-                                    .addComponent(text_name)
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Text_mail, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addContainerGap())
+                                        .addComponent(btn_escuadron, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(4, 4, 4))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(etiq_name, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(etiq_apel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(etiq_mail, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(etiq_ciu, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_tipodesangre, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(25, 25, 25)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(SPIN_DIA, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(16, 16, 16)
-                                .addComponent(SPIN_MES, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(COMBO_ESTD1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(106, 106, 106))))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(text_NOMBRE, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                                    .addComponent(Text_escuadron)
+                                    .addComponent(text_ape)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(Text_ead, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+                                        .addComponent(text_tipodesangre, javax.swing.GroupLayout.Alignment.LEADING)))
+                                .addGap(44, 44, 44)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGap(136, 136, 136)
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(95, 95, 95)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(BTN_AGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(BTN_ELIMIANR, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(10, 10, 10)
+                                                .addComponent(BTN_ELIMINARTODO)
+                                                .addGap(18, 18, 18))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(btn_mamalon, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(88, 88, 88)))
+                                        .addComponent(BTN_MODIFICAR, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(text_paisorigen, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(RB_espadadeenergia)
+                            .addComponent(RB_rifledeasalto))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(BTN_ATR, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(55, 55, 55)
+                        .addComponent(BTN_SALIR, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(455, 455, 455)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(text_fila, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(text_columna, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(etiq_nvodato)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(text_nuevodato, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(etiq_name, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(text_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(etiq_apel, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(text_ape, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Etiq_dire)
-                    .addComponent(Text_Dire, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(etiq_ciu, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(COMBO_ESTD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SPIN_DIA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SPIN_MES, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(COMBO_ESTD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(etiq_nac, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(etiq_mail, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Text_mail, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BTN_AGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BTN_ELIMIANR, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BTN_ELIMINARTODO, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BTN_MODIFICAR, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24)
+                        .addComponent(btn_mamalon)
+                        .addGap(84, 84, 84))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(etiq_name, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(text_NOMBRE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(etiq_apel, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(text_ape, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jCheckBox1)
-                            .addComponent(etiq_estac, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btn_escuadron)
+                            .addComponent(Text_escuadron, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(etiq_ciu, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(text_paisorigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox2)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(text_tipodesangre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_tipodesangre))
+                        .addGap(8, 8, 8)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(etiq_mail)
+                            .addComponent(Text_ead, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(RB_espadadeenergia)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox3)))
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(BTN_SALIR)
-                        .addComponent(BTN_ATR))
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addComponent(RB_rifledeasalto)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(text_fila, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2)
+                            .addComponent(text_columna, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(etiq_nvodato)
+                            .addComponent(text_nuevodato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27)))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BTN_SALIR)
+                    .addComponent(BTN_ATR))
+                .addGap(18, 18, 18))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        String nombre;
-        nombre = text_name.getText();
-        jLabel6.setText("¡Bienvenido " + nombre + "!");
-    }//GEN-LAST:event_jButton1MouseClicked
 
     private void BTN_SALIRMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BTN_SALIRMouseClicked
 System.exit(0);        // TODO add your handling code here:
@@ -240,6 +338,71 @@ main main =new main();
 main.setVisible (true);
 this.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_BTN_ATRMouseClicked
+
+    private void BTN_AGREGARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_AGREGARActionPerformed
+        // TODO add your handling code here:
+        String []info=new String[6];
+        info[0]=text_NOMBRE.getText();
+        info[1]=text_ape.getText();
+        info[2]=Text_escuadron.getText();
+        info[3]=text_paisorigen.getText();
+        info[4]=text_tipodesangre.getText();
+        info[5]=Text_ead.getText();
+        modelo.addRow(info);
+        
+        text_NOMBRE.setText("");
+        text_ape.setText("");
+        Text_escuadron.setText("");
+        text_paisorigen.setText("");
+        text_tipodesangre.setText("");
+        Text_ead.setText("");
+        
+    }//GEN-LAST:event_BTN_AGREGARActionPerformed
+
+    private void BTN_ELIMIANRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_ELIMIANRActionPerformed
+        // TODO add your handling code here:
+        int fila=tabla.getSelectedRow();
+        if(fila>=0){
+            modelo.removeRow(fila);
+        }else{
+            JOptionPane.showMessageDialog(null, "¡SELECCIONA UNA FILA SOLDADO!");
+        }
+    }//GEN-LAST:event_BTN_ELIMIANRActionPerformed
+
+    private void BTN_ELIMINARTODOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_ELIMINARTODOActionPerformed
+        // TODO add your handling code here:
+        int fila=tabla.getRowCount();
+        for (int i =fila-1; i >=0; i--) {
+            modelo.removeRow(i);
+        }
+    }//GEN-LAST:event_BTN_ELIMINARTODOActionPerformed
+
+    private void BTN_MODIFICARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_MODIFICARActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BTN_MODIFICARActionPerformed
+
+    private void BTN_MODIFICARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BTN_MODIFICARMouseClicked
+        // TODO add your handling code here:
+        Modificar Modificar =new Modificar();
+        Modificar.setVisible (true);
+        this.dispose();
+    }//GEN-LAST:event_BTN_MODIFICARMouseClicked
+
+    private void BTN_ATRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_ATRActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BTN_ATRActionPerformed
+
+    private void btn_mamalonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_mamalonActionPerformed
+        // TODO add your handling code here:
+        int fila=Integer.parseInt(text_fila.getText());
+        int columna=Integer.parseInt(text_columna.getText());
+        modelo.setValueAt(text_nuevodato.getText(),fila, columna);
+        
+    }//GEN-LAST:event_btn_mamalonActionPerformed
+
+    private void text_NOMBREActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text_NOMBREActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_text_NOMBREActionPerformed
 
     /**
      * @param args the command line arguments
@@ -277,27 +440,37 @@ this.dispose();// TODO add your handling code here:
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BTN_AGREGAR;
     private javax.swing.JButton BTN_ATR;
+    private javax.swing.JButton BTN_ELIMIANR;
+    private javax.swing.JButton BTN_ELIMINARTODO;
+    private javax.swing.JButton BTN_MODIFICAR;
     private javax.swing.JButton BTN_SALIR;
-    private javax.swing.JComboBox<String> COMBO_ESTD;
-    private javax.swing.JComboBox<String> COMBO_ESTD1;
-    private javax.swing.JLabel Etiq_dire;
-    private javax.swing.JSpinner SPIN_DIA;
-    private javax.swing.JSpinner SPIN_MES;
-    private javax.swing.JTextField Text_Dire;
-    private javax.swing.JTextField Text_mail;
+    private javax.swing.JRadioButton RB_espadadeenergia;
+    private javax.swing.JRadioButton RB_rifledeasalto;
+    private javax.swing.JTextField Text_ead;
+    private javax.swing.JTextField Text_escuadron;
+    private javax.swing.JLabel btn_escuadron;
+    private javax.swing.JButton btn_mamalon;
+    private javax.swing.JLabel btn_tipodesangre;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel etiq_apel;
     private javax.swing.JLabel etiq_ciu;
-    private javax.swing.JLabel etiq_estac;
     private javax.swing.JLabel etiq_mail;
-    private javax.swing.JLabel etiq_nac;
     private javax.swing.JLabel etiq_name;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JLabel etiq_nvodato;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JScrollPane jScrollPane1;
+    public static javax.swing.JTable tabla;
+    private javax.swing.JTextField text_NOMBRE;
     private javax.swing.JTextField text_ape;
-    private javax.swing.JTextField text_name;
+    private javax.swing.JTextField text_columna;
+    private javax.swing.JTextField text_fila;
+    private javax.swing.JTextField text_nuevodato;
+    private javax.swing.JTextField text_paisorigen;
+    private javax.swing.JTextField text_tipodesangre;
     // End of variables declaration//GEN-END:variables
 }
